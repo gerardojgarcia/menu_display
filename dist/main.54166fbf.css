@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  height: 70%;
+  border: 4px solid black;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.menu-item-box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.menu-item-box .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  width: 100%;
+  height: 33%;
+}
+.menu-item-box .menu-item #topic-click-one, .menu-item-box .menu-item #topic-click-two, .menu-item-box .menu-item #topic-click-three {
+  font-size: 2.5rem;
+  width: 200px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 3px solid black;
+  text-align: center;
+  box-shadow: 10px 10px 0px 2px black;
+  cursor: pointer;
+  background-color: white;
+  transition: 200ms ease-in;
+}
+.menu-item-box .menu-item #topic-click-one:focus, .menu-item-box .menu-item #topic-click-two:focus, .menu-item-box .menu-item #topic-click-three:focus {
+  box-shadow: none;
+  transform: translateY(10px) translateX(10px);
+}
+
+.menu-info-box {
+  width: 45%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.menu-info-box p {
+  font-size: 2.5rem;
+}
+
+#topic-desc p {
+  border: 4px solid black;
+  padding: 50px;
+  box-shadow: 10px 10px 0px 2px black;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-box-shadow {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=/main.54166fbf.css.map */
